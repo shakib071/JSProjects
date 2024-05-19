@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+    <!-- <input id="input-value" type="text" placeholder="Player Name" onkeydown="if(event.keyCode==13) handleSearch()"> -->
+    <form id="inputForm">
+        <!-- <label for="inputData">Enter your data:</label> -->
+        <input type="text" id="inputData" name="inputData" placeholder="Enter player name then hit enter" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('inputForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const inputData = document.getElementById('inputData').value;
+            localStorage.setItem('inputData', inputData);
+            window.location.href = 'output.html';
+        });
+    </script>
+
+    <div class="main-container">
+        <div id="player-container" class="player-container">
+
+        </div>
+        <div class="cart-container">
+            <h2>Total <span id="count">0</span></h2>
+            <hr>
+            <div id="cart-main-container" class="cart-main-container">
+
+            </div>
+        </div>
+    </div>
+
+  
+
+  <script src="app.js"></script>
+    
+</body>
+</html>

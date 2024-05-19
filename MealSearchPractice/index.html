@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="search-item" class="search-item">
+
+        
+
+    </div>
+    <input type="text" id="search-box" name="inputData" placeholder="Enter Meal name and hit Enter" required onkeydown="if(event.keyCode==13) handleSearch()" >
+    <!-- <input id="search-box" type="text" placeholder="Food Name"  onkeydown="if(event.keyCode==13) handleSearch()" required> -->
+    <!-- <button id="handleadd" type="submit" onclick="handleSearch()">Search</button> -->
+    <div class="main-container">
+        <div id="home-container" class="home-container">
+
+        </div>
+    </div>
+
+    <div id="nodata" class="nodata">
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
